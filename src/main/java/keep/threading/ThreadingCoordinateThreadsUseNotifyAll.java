@@ -1,13 +1,13 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class ConcurrencyNotifyAll {
+public class ThreadingCoordinateThreadsUseNotifyAll {
     static class RedisWorker implements Runnable {
-        private ConcurrencyNotifyAll cn;
-        RedisWorker(ConcurrencyNotifyAll cn) {
+        private ThreadingCoordinateThreadsUseNotifyAll cn;
+        RedisWorker(ThreadingCoordinateThreadsUseNotifyAll cn) {
             this.cn = cn;
         }
 
@@ -24,7 +24,7 @@ public class ConcurrencyNotifyAll {
     }
 
     public static void main(String[] args) throws Exception {
-        ConcurrencyNotifyAll cn = new ConcurrencyNotifyAll();
+        ThreadingCoordinateThreadsUseNotifyAll cn = new ThreadingCoordinateThreadsUseNotifyAll();
         ExecutorService executorService = Executors.newCachedThreadPool();
         for (int i=0; i<3; i++) {
             executorService.execute(new RedisWorker(cn));

@@ -1,8 +1,8 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ConcurrencyAtomicInteger {
+public class ThreadingAtomicInteger {
     private static final Integer THREADS_COUNT = 20;
     private static Integer nonAtomicRace = 0;
     private static AtomicInteger atomicRace = new AtomicInteger(0);

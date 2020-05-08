@@ -1,4 +1,4 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -8,7 +8,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 
-public class ConcurrencyCondition {
+public class ThreadingCoordinatorThreadsUseCondition {
 
     static class RedisWorker implements Runnable {
         private Condition condition;

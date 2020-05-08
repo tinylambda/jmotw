@@ -1,4 +1,4 @@
-package keep.concurrency;
+package keep.threading;
 
 
 import java.util.Random;
@@ -29,7 +29,7 @@ class ShowThreadLocalTask implements Runnable {
     }
 }
 
-public class ConcurrencyThreadLocal {
+public class ThreadingThreadLocal {
     public static void main(String[] args) {
         ThreadLocal<Integer> threadLocalVar = new ThreadLocal<Integer>();
         threadLocalVar.set(9999);  // Should be 9999 all the time in main thread

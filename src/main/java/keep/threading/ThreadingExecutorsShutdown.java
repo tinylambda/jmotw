@@ -1,10 +1,10 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class ConcurrencyExecutorsShutdown {
+public class ThreadingExecutorsShutdown {
     static class Worker implements Runnable {
         private int workerId;
         public Worker(int i) {

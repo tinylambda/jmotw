@@ -1,9 +1,9 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.Random;
 import java.util.concurrent.*;
 
-public class ConcurrencyCyclicBarrier {
+public class ThreadingCyclicBarrier {
     static class ChooseDishesFromMenu implements Runnable {
         private String who;
         private CyclicBarrier cyclicBarrier;

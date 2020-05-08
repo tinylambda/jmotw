@@ -1,9 +1,9 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.Random;
 import java.util.concurrent.*;
 
-public class ConcurrencyExecutorsFutureAsComplete {
+public class ThreadingExecutorsFutureAsComplete {
     static class Worker implements Callable<Integer> {
         private int workerId;
         public Worker(int id) {

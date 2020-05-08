@@ -1,9 +1,9 @@
-package keep.concurrency;
+package keep.threading;
 
 import java.util.ArrayList;
 import java.util.concurrent.*;
 
-public class ConcurrencyExecutorsFutureCancel {
+public class ThreadingExecutorsFutureCancel {
     static class Worker implements Callable<Integer> {
         private int workerId;
         public Worker(int id) {
